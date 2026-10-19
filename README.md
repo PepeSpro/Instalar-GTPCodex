@@ -1,29 +1,29 @@
-# Integración de ChatGPT Codex en Warp Terminal
+# Integracion de ChatGPT Codex en Warp Terminal
 
-Este paquete proporciona un instalador **100% portable y automatizado** para integrar el agente de código oficial de OpenAI (**ChatGPT Codex CLI**) dentro de **Warp Terminal** en Windows.
+Este paquete proporciona un instalador **100% portable y automatizado para Windows** para integrar el agente de codigo oficial de OpenAI (**ChatGPT Codex CLI**) dentro de **Warp Terminal**.
 
 ---
 
-## 🚀 Cómo Usarlo
+## 🚀 Como Usarlo en Windows
 
 1. Haz doble clic en el archivo:
    ```text
    Instalar-Codex-Warp.bat
    ```
-2. El asistente interactivo se encargará automáticamente de:
-   - **Comprobar Warp Terminal:** Si no lo tienes, te ofrecerá descargarlo e instalarlo con un solo clic.
-   - **Comprobar Node.js y npm:** Verifica la presencia de Node.js (v18+) e instala la versión LTS automáticamente si hace falta.
-   - **Ajustar permisos de PowerShell:** Configura la directiva de ejecución (`RemoteSigned` en `CurrentUser`) para que los comandos globales de `codex` funcionen sin bloqueos.
+2. El asistente interactivo se encargara automaticamente de:
+   - **Comprobar Warp Terminal:** Si no lo tienes, te ofrecera descargarlo e instalarlo con un solo clic.
+   - **Comprobar Node.js y npm:** Verifica la presencia de Node.js (v18+) e instala la version LTS automaticamente si hace falta.
+   - **Configurar compatibilidad en Windows:** Ajusta la directiva de PowerShell (`RemoteSigned`) y crea un alias de PowerShell para que puedas escribir `codex` directamente desde Warp sin bloqueos por politicas de ejecucion.
    - **Instalar OpenAI Codex CLI:** Descarga e instala globalmente el paquete oficial `@openai/codex`.
-   - **Instalar el Plugin de Warp para Codex (`warp@codex-warp`):** Conecta las capacidades de Warp (notificaciones nativas de agente, vertical tabs, revisión de código y atajos como `Ctrl+G`).
-   - **Asistente de Autenticación:** Te permite elegir entre:
-     - **Opción 1:** Iniciar sesión con tu cuenta de ChatGPT (Plus, Pro, Team o Enterprise) vía navegador.
-     - **Opción 2:** Introducir tu clave de API de OpenAI (`sk-...`), la cual se guardará de forma persistente en las variables de entorno de tu usuario.
-     - **Opción 3:** Omitir y autenticar más tarde.
+   - **Instalar el Plugin de Warp para Codex (`warp@codex-warp`):** Conecta las capacidades de Warp (notificaciones nativas de agente, vertical tabs, revision de codigo y atajos como `Ctrl+G`).
+   - **Asistente de Autenticacion:** Te permite elegir entre:
+     - **Opcion 1:** Iniciar sesion con tu cuenta de ChatGPT (Plus, Pro, Team o Enterprise) via navegador.
+     - **Opcion 2:** Introducir tu clave de API de OpenAI (`sk-...`), la cual se guardara de forma persistente en las variables de entorno de tu usuario.
+     - **Opcion 3:** Omitir y autenticar mas tarde.
 
 ---
 
-## 💻 Cómo Trabajar con Codex en Warp
+## 💻 Como Trabajar con Codex en Warp
 
 Una vez instalado, usarlo es tan sencillo como:
 
@@ -36,18 +36,18 @@ Una vez instalado, usarlo es tan sencillo como:
    ```powershell
    codex
    ```
-4. Pídele al agente lo que necesitas en lenguaje natural (ej: *"crea una función para validar emails en utils.py"*).
+4. Pidele al agente lo que necesitas en lenguaje natural (ej: *"crea una funcion para validar emails en utils.py"*).
 
 ### Atajos y funciones integradas en Warp:
-- **`Ctrl + G`**: Abre el editor de prompts enriquecido de Warp para redactar instrucciones complejas o multilínea.
-- **Notificaciones nativas**: Warp te notificará en el escritorio cuando Codex complete un trabajo largo o requiera tu aprobación.
-- **Revisión de código**: Envía comentarios y feedback línea a línea directamente a Codex desde el panel de Warp.
+- **`Ctrl + G`**: Abre el editor de prompts enriquecido de Warp para redactar instrucciones complejas o multilinea.
+- **Notificaciones nativas**: Warp te notificara en el escritorio cuando Codex complete un trabajo largo o requiera tu aprobacion.
+- **Revision de codigo**: Envia comentarios y feedback linea a linea directamente a Codex desde el panel de Warp.
 
 ---
 
 ## 📂 Archivos Incluidos
 
-- [Instalar-Codex-Warp.bat](file:///C:/Users/iago_/Warp-ChatGPT-Codex/Instalar-Codex-Warp.bat): Lanzador universal compatible con doble clic.
-- [Instalar-Codex-Warp.ps1](file:///C:/Users/iago_/Warp-ChatGPT-Codex/Instalar-Codex-Warp.ps1): Script modular de PowerShell con la lógica de verificación, descarga y configuración.
-- [Iniciar-Codex-Warp.bat](file:///C:/Users/iago_/Warp-ChatGPT-Codex/Iniciar-Codex-Warp.bat): Acceso rápido para abrir Warp.
-- [README.md](file:///C:/Users/iago_/Warp-ChatGPT-Codex/README.md): Esta guía de referencia.
+- [Instalar-Codex-Warp.bat](file:///E:/GDrive/Instalador%20GTP%20Codex/Instalar-Codex-Warp.bat): Lanzador universal compatible con doble clic en Windows.
+- [Instalar-Codex-Warp.ps1](file:///E:/GDrive/Instalador%20GTP%20Codex/Instalar-Codex-Warp.ps1): Script modular de PowerShell con la logica de instalacion y configuracion.
+- [Iniciar-Codex-Warp.bat](file:///E:/GDrive/Instalador%20GTP%20Codex/Iniciar-Codex-Warp.bat): Acceso rapido para abrir Warp.
+- [README.md](file:///E:/GDrive/Instalador%20GTP%20Codex/README.md): Esta guia de referencia.

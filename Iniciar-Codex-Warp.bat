@@ -1,8 +1,8 @@
 @echo off
-chcp 65001 >nul
+setlocal EnableExtensions
+cd /d "%~dp0"
 title Iniciar ChatGPT Codex en Warp
 
-:: Comprobar si Warp esta instalado
 set "WARP_EXE=C:\Program Files\Warp\warp.exe"
 if not exist "%WARP_EXE%" (
     set "WARP_EXE=%LOCALAPPDATA%\Programs\Warp\warp.exe"
